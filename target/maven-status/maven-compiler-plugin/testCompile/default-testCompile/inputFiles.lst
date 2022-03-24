@@ -1,5 +1,6 @@
-D:\Automation FC\Cucumber_repractice\src\test\java\cucumberOptions\Hooks.java
-D:\Automation FC\Cucumber_repractice\src\test\java\stepDefinitions\user\UserCommonPageSteps.java
-D:\Automation FC\Cucumber_repractice\src\test\java\stepDefinitions\user\UserRegisterPageSteps.java
-D:\Automation FC\Cucumber_repractice\src\test\java\stepDefinitions\user\UserHomePageSteps.java
-D:\Automation FC\Cucumber_repractice\src\test\java\cucumberOptions\TestRunner.java
+D:\Automation FC\Cucumber_Nopcommerce\src\test\java\stepDefinitions\user\UserCustomerInfoPageSteps.java
+D:\Automation FC\Cucumber_Nopcommerce\src\test\java\stepDefinitions\user\UserHomePageSteps.java
+D:\Automation FC\Cucumber_Nopcommerce\src\test\java\stepDefinitions\user\UserLoginPageSteps.java
+D:\Automation FC\Cucumber_Nopcommerce\src\test\java\cucumberOptions\TestRunner.java
+D:\Automation FC\Cucumber_Nopcommerce\src\test\java\cucumberOptions\Hooks.java
+D:\Automation FC\Cucumber_Nopcommerce\src\test\java\stepDefinitions\user\UserRegisterPageSteps.java

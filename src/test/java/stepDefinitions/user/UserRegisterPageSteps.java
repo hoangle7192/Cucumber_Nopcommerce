@@ -2,13 +2,11 @@ package stepDefinitions.user;
 
 import commons.PageGeneratorManager;
 import cucumberOptions.Hooks;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import pageObject.user.UserCustomerInfoPageObject;
-import pageObject.user.UserHomePageObject;
 import pageObject.user.UserRegisterPageObject;
 import ultil.DataHelper;
 
@@ -22,7 +20,6 @@ public class UserRegisterPageSteps {
     WebDriver driver;
     DataHelper dataHelper;
     UserRegisterPageObject userRegisterPage;
-    UserHomePageObject userHomePage;
     UserCustomerInfoPageObject userCustomerInfoPage;
 
     public static String email;
@@ -84,7 +81,7 @@ public class UserRegisterPageSteps {
         userRegisterPage.selectDateOfBirth("DateOfBirthDay", userInfo.get(0).get("dateOfBirthDay"));
         userRegisterPage.selectDateOfBirth("DateOfBirthMonth", userInfo.get(0).get("dateOfBirthMonth"));
         userRegisterPage.selectDateOfBirth("DateOfBirthYear", userInfo.get(0).get("dateOfBirthYear"));
-        userRegisterPage.enterToTextBoxByName(driver, "Email", email);
+        userRegisterPage.enterToTextBoxByName(driver, "Email",userInfo.get(0).get("email") );
         userRegisterPage.enterToTextBoxByName(driver, "Company", userInfo.get(0).get("company"));
         userRegisterPage.enterToTextBoxByName(driver, "Password", userInfo.get(0).get("password"));
         userRegisterPage.enterToTextBoxByName(driver, "ConfirmPassword", userInfo.get(0).get("confirmPassword"));

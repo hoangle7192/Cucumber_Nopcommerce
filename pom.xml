@@ -131,22 +131,13 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>cucumber-jvm-example</projectName>
+                            <projectName>Cucumber-Nopcommerce</projectName>
                             <!--<skip>false</skip>-->
                             <outputDirectory>${project.build.directory}/site/cucumber-reporting</outputDirectory>
-                            <inputDirectory>${project.build.directory}/site/cucumber.json</inputDirectory>
+                            <inputDirectory>${project.build.directory}/site</inputDirectory>
                             <jsonFiles>
                                 <param>**/*.json</param>
                             </jsonFiles>
-                            <classificationDirectory>${project.build.directory}/classifications
-                            </classificationDirectory>
-                            <classificationFiles>
-                                <param>sample.properties</param>
-                                <param>other.properties</param>
-                            </classificationFiles>
-                            <parallelTesting>false</parallelTesting>
-                            <!--     <mergeFeaturesById>false</mergeFeaturesById>
-                                 <mergeFeaturesWithRetest>false</mergeFeaturesWithRetest>-->
                             <checkBuildResult>false</checkBuildResult>
                         </configuration>
                     </execution>

@@ -1,6 +1,7 @@
 cucumberOptions\Hooks.class
+stepDefinitions\user\UserHomePageSteps.class
+stepDefinitions\user\UserLoginPageSteps.class
 cucumberOptions\Hooks$BrowserCleanup.class
 cucumberOptions\TestRunner.class
-stepDefinitions\user\UserCommonPageSteps.class
 stepDefinitions\user\UserRegisterPageSteps.class
-stepDefinitions\user\UserHomePageSteps.class
+stepDefinitions\user\UserCustomerInfoPageSteps.class

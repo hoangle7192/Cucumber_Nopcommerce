@@ -42,7 +42,7 @@ Feature: Register a user
 
     Examples:
       | gender | firstName | lastName | dateOfBirthDay | dateOfBirthMonth | dateOfBirthYear | email              | company    | password | confirmPassword |
-      | M      | Wayne     | Rooney   | 10             | March            | 1998            | test9851@gmail.com | Manchester | wayne123 | wayne123        |
+      | M      | Wayne     | Rooney   | 10             | March            | 1998            | test0011@gmail.com | Manchester | wayne123 | wayne123        |
 
   @email_already_exists
   Scenario Outline: Register a user with email already exists
@@ -54,7 +54,7 @@ Feature: Register a user
 
     Examples:
       | gender | firstName | lastName | dateOfBirthDay | dateOfBirthMonth | dateOfBirthYear | email              | company    | password | confirmPassword | error message                      |
-      | M      | Wayne     | Rooney   | 10             | March            | 1998            | test9851@gmail.com | Manchester | wayne123 | wayne123        | The specified email already exists |
+      | M      | Wayne     | Rooney   | 10             | March            | 1998            | test0011@gmail.com | Manchester | wayne123 | wayne123        | The specified email already exists |
 
 
   @less_than_six

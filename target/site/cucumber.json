@@ -1,1 +1,720 @@
-[]
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11115777800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a web browser is on the Register Page",
+            "match": {
+              "location": "stepDefinitions.user.UserHomePageSteps.aWebBrowserIsOnTheRegisterPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-24T09:25:43.324Z",
+        "line": 19,
+        "name": "Register a user with empty data",
+        "description": "",
+        "id": "register-a-user;register-a-user-with-empty-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 349994900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click to Register button",
+            "match": {
+              "location": "stepDefinitions.user.UserRegisterPageSteps.clickToRegisterButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 102998900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "First name error message is displayed \"First name is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"First name is required.\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinitions.user.UserRegisterPageSteps.firstNameErrorMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 109001100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Last name error message is displayed \"Last name is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Last name is required.\"",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefinitions.user.UserRegisterPageSteps.lastNameErrorMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 72996600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Email error message is displayed \"Email is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Email is required.\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.user.UserRegisterPageSteps.emailErrorMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 77999200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Password error message is displayed \"Password is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Password is required.\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.user.UserRegisterPageSteps.passwordErrorMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 78001000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Confirm password error message is displayed \"Password is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Password is required.\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.user.UserRegisterPageSteps.confirmPasswordErrorMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          },
+          {
+            "name": "@empty-data"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 638993300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a web browser is on the Register Page",
+            "match": {
+              "location": "stepDefinitions.user.UserHomePageSteps.aWebBrowserIsOnTheRegisterPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-24T09:25:55.383Z",
+        "line": 29,
+        "name": "Register a user with invalid email",
+        "description": "",
+        "id": "register-a-user;register-a-user-with-invalid-email;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 261998900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "enter \"abc#123\" to Email text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc#123\"",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinitions.user.UserRegisterPageSteps.enterToEmailTextBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 162585400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "click to Register button",
+            "match": {
+              "location": "stepDefinitions.user.UserRegisterPageSteps.clickToRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83000300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Email error message is displayed \"Wrong email\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wrong email\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.user.UserRegisterPageSteps.emailErrorMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          },
+          {
+            "name": "@invalid-email"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 644001300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a web browser is on the Register Page",
+            "match": {
+              "location": "stepDefinitions.user.UserHomePageSteps.aWebBrowserIsOnTheRegisterPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-24T09:25:56.557Z",
+        "line": 45,
+        "name": "Register a user with valid data",
+        "description": "",
+        "id": "register-a-user;register-a-user-with-valid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1988997400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "enter to Your Personal Details form with data",
+            "match": {
+              "location": "stepDefinitions.user.UserRegisterPageSteps.enterToYourPersonalDetailsFormWithData(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "gender",
+                  "firstName",
+                  "lastName",
+                  "dateOfBirthDay",
+                  "dateOfBirthMonth",
+                  "dateOfBirthYear",
+                  "email",
+                  "company",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "M",
+                  "Wayne",
+                  "Rooney",
+                  "10",
+                  "March",
+                  "1998",
+                  "test0011@gmail.com",
+                  "Manchester",
+                  "wayne123",
+                  "wayne123"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1229002600,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "click to Register button",
+            "match": {
+              "location": "stepDefinitions.user.UserRegisterPageSteps.clickToRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83999200,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "registered success message has displayed \"Your registration completed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your registration completed\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.user.UserRegisterPageSteps.isRegisteredSuccessMessageDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 766536800,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "click to My account header link",
+            "match": {
+              "location": "stepDefinitions.user.UserRegisterPageSteps.clickToMyAccountHeaderLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68998700,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "get Email attribute value",
+            "match": {
+              "location": "stepDefinitions.user.UserCustomerInfoPageSteps.getEmailAttributeValue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1231561000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "click to Logout button",
+            "match": {
+              "location": "stepDefinitions.user.UserCustomerInfoPageSteps.clickToLogoutButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 774535400,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "click to Register header link",
+            "match": {
+              "location": "stepDefinitions.user.UserHomePageSteps.clickToRegisterHeaderLink()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          },
+          {
+            "name": "@register_success"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 681615000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a web browser is on the Register Page",
+            "match": {
+              "location": "stepDefinitions.user.UserHomePageSteps.aWebBrowserIsOnTheRegisterPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-24T09:26:03.356Z",
+        "line": 57,
+        "name": "Register a user with email already exists",
+        "description": "",
+        "id": "register-a-user;register-a-user-with-email-already-exists;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1643992400,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "enter to Your Personal Details form with data",
+            "match": {
+              "location": "stepDefinitions.user.UserRegisterPageSteps.enterToYourPersonalDetailsFormWithData(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "gender",
+                  "firstName",
+                  "lastName",
+                  "dateOfBirthDay",
+                  "dateOfBirthMonth",
+                  "dateOfBirthYear",
+                  "email",
+                  "company",
+                  "password",
+                  "confirmPassword",
+                  "errorMessage"
+                ]
+              },
+              {
+                "cells": [
+                  "M",
+                  "Wayne",
+                  "Rooney",
+                  "10",
+                  "March",
+                  "1998",
+                  "test0011@gmail.com",
+                  "Manchester",
+                  "wayne123",
+                  "wayne123",
+                  "\u003cerrorMessage\u003e"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 701988700,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "click to Register button",
+            "match": {
+              "location": "stepDefinitions.user.UserRegisterPageSteps.clickToRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69998400,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "email already exists error message is displayed \"The specified email already exists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The specified email already exists\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepDefinitions.user.UserRegisterPageSteps.emailAlreadyExistsErrorMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          },
+          {
+            "name": "@email_already_exists"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 688993800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a web browser is on the Register Page",
+            "match": {
+              "location": "stepDefinitions.user.UserHomePageSteps.aWebBrowserIsOnTheRegisterPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-24T09:26:06.465Z",
+        "line": 68,
+        "name": "Register a user with password less than 6 character",
+        "description": "",
+        "id": "register-a-user;register-a-user-with-password-less-than-6-character;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 265082300,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "enter \"123\" to Password text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123\"",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinitions.user.UserRegisterPageSteps.enterToPasswordTextBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 128999700,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "click to Register button",
+            "match": {
+              "location": "stepDefinitions.user.UserRegisterPageSteps.clickToRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69998400,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "Password error message is displayed \"Password must meet the following rules:\nmust have at least 6 characters\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Password must meet the following rules:\nmust have at least 6 characters\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.user.UserRegisterPageSteps.passwordErrorMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          },
+          {
+            "name": "@less_than_six"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 626233300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a web browser is on the Register Page",
+            "match": {
+              "location": "stepDefinitions.user.UserHomePageSteps.aWebBrowserIsOnTheRegisterPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-24T09:26:07.626Z",
+        "line": 79,
+        "name": "Register a user with Password not match Confirm Password",
+        "description": "",
+        "id": "register-a-user;register-a-user-with-password-not-match-confirm-password;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 233002600,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "enter \"123\" to Password text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123\"",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinitions.user.UserRegisterPageSteps.enterToPasswordTextBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 211994200,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "enter \"123456\" to Confirm Password text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456\"",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinitions.user.UserRegisterPageSteps.enterToConfirmPasswordTextBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 104997800,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "click to Register button",
+            "match": {
+              "location": "stepDefinitions.user.UserRegisterPageSteps.clickToRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81994600,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "Confirm password error message is displayed \"The password and confirmation password do not match.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The password and confirmation password do not match.\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.user.UserRegisterPageSteps.confirmPasswordErrorMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          },
+          {
+            "name": "@not_match"
+          }
+        ]
+      }
+    ],
+    "name": "Register a user",
+    "description": "",
+    "id": "register-a-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/user/register.feature",
+    "tags": [
+      {
+        "name": "@register",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
