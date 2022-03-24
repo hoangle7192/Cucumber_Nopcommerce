@@ -31,21 +31,20 @@ public class UserLoginPageSteps {
         userCustomerInfoPage = PageGeneratorManager.getUserCustomerInfoPage(driver);
     }
 
-    @When("enter value to Email text box")
+    @When("enter value invalid {string} to Email text box")
     public void enterValueToEmailTextBox(DataTable dataTable) {
         List<List<String>> email = dataTable.cells();
         userLoginPage.enterToTextBoxByName(driver, "Email", email.get(0).get(0));
     }
 
-    @Then("email error message is displayed")
-    public void emailErrorMessageIsDisplayed(DataTable dataTable) {
-        List<List<String>> errorMessage = dataTable.cells();
-        Assert.assertEquals(errorMessage.get(0).get(0), userLoginPage.getEmailErrorMessage());
+    @Then("email error message {string} is displayed")
+    public void emailErrorMessageIsDisplayed(String errorMessage) {
+        Assert.assertEquals(errorMessage, userLoginPage.getEmailErrorMessage());
     }
 
     @When("enter registered email to Email text box")
     public void enterRegisteredEmailToEmailTextBox() {
-        userLoginPage.enterToTextBoxByName(driver, "Email", UserRegisterPageSteps.email);
+        userLoginPage.enterToTextBoxByName(driver, "Email", UserCustomerInfoPageSteps.emailMain);
     }
 
     @And("enter valid password to Password text box")
@@ -54,9 +53,8 @@ public class UserLoginPageSteps {
         userLoginPage.enterToTextBoxByName(driver, "Password", password.get(0).get(0));
     }
 
-    @Then("a web browser is on the Customer Info Page")
-    public void getCustomerInfoPageTitle(DataTable dataTable) {
-        List<List<String>> title = dataTable.cells();
-        Assert.assertEquals(title.get(0).get(0), userLoginPage.getCustomerInfoPageTitle());
+    @Then("a web browser is on the Customer Info Page with title {string}")
+    public void getCustomerInfoPageTitle(String titlePage) {
+        Assert.assertEquals(titlePage, userLoginPage.getCustomerInfoPageTitle());
     }
 }

@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11115777800,
+              "duration": 13001641000,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-24T09:25:43.324Z",
+        "start_timestamp": "2022-03-24T10:14:34.991Z",
         "line": 19,
         "name": "Register a user with empty data",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 349994900,
+              "duration": 294004600,
               "status": "passed"
             },
             "line": 10,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 102998900,
+              "duration": 129997300,
               "status": "passed"
             },
             "line": 11,
@@ -64,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 109001100,
+              "duration": 79992200,
               "status": "passed"
             },
             "line": 12,
@@ -82,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 72996600,
+              "duration": 65999700,
               "status": "passed"
             },
             "line": 13,
@@ -100,7 +100,7 @@
           },
           {
             "result": {
-              "duration": 77999200,
+              "duration": 60999900,
               "status": "passed"
             },
             "line": 14,
@@ -118,7 +118,7 @@
           },
           {
             "result": {
-              "duration": 78001000,
+              "duration": 75995000,
               "status": "passed"
             },
             "line": 15,
@@ -153,7 +153,7 @@
         "steps": [
           {
             "result": {
-              "duration": 638993300,
+              "duration": 1177999800,
               "status": "passed"
             },
             "line": 6,
@@ -166,7 +166,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-24T09:25:55.383Z",
+        "start_timestamp": "2022-03-24T10:14:48.851Z",
         "line": 29,
         "name": "Register a user with invalid email",
         "description": "",
@@ -176,7 +176,7 @@
         "steps": [
           {
             "result": {
-              "duration": 261998900,
+              "duration": 412539200,
               "status": "passed"
             },
             "line": 23,
@@ -194,7 +194,7 @@
           },
           {
             "result": {
-              "duration": 162585400,
+              "duration": 317520900,
               "status": "passed"
             },
             "line": 24,
@@ -206,7 +206,7 @@
           },
           {
             "result": {
-              "duration": 83000300,
+              "duration": 311001800,
               "status": "passed"
             },
             "line": 25,
@@ -241,7 +241,7 @@
         "steps": [
           {
             "result": {
-              "duration": 644001300,
+              "duration": 820000500,
               "status": "passed"
             },
             "line": 6,
@@ -254,7 +254,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-24T09:25:56.557Z",
+        "start_timestamp": "2022-03-24T10:14:51.087Z",
         "line": 45,
         "name": "Register a user with valid data",
         "description": "",
@@ -264,7 +264,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1988997400,
+              "duration": 2123185900,
               "status": "passed"
             },
             "line": 33,
@@ -306,7 +306,7 @@
           },
           {
             "result": {
-              "duration": 1229002600,
+              "duration": 200995900,
               "status": "passed"
             },
             "line": 36,
@@ -318,8 +318,9 @@
           },
           {
             "result": {
-              "duration": 83999200,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class\u003d\u0027result\u0027] (tried for 30 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat commons.BasePage.waitForElementVisible(BasePage.java:458)\r\n\tat pageObject.user.UserRegisterPageObject.getRegisteredSuccessMessage(UserRegisterPageObject.java:26)\r\n\tat stepDefinitions.user.UserRegisterPageSteps.isRegisteredSuccessMessageDisplayed(UserRegisterPageSteps.java:96)\r\n\tat ✽.registered success message has displayed \"Your registration completed\"(file:///D:/Automation%20FC/Cucumber_Nopcommerce/src/test/java/features/user/register.feature:37)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027result\u0027]\"}\n  (Session info: chrome\u003d99.0.4844.74)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DN1-HOANGLH\u0027, ip: \u0027192.168.68.125\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\\Users\\HoangLH\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:11579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4c7296c464389fe70cc43b56334b6c05\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027result\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat commons.BasePage.waitForElementVisible(BasePage.java:458)\r\n\tat pageObject.user.UserRegisterPageObject.getRegisteredSuccessMessage(UserRegisterPageObject.java:26)\r\n\tat stepDefinitions.user.UserRegisterPageSteps.isRegisteredSuccessMessageDisplayed(UserRegisterPageSteps.java:96)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)\r\n",
+              "duration": 30062855900,
+              "status": "failed"
             },
             "line": 37,
             "name": "registered success message has displayed \"Your registration completed\"",
@@ -336,8 +337,7 @@
           },
           {
             "result": {
-              "duration": 766536800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 38,
             "name": "click to My account header link",
@@ -348,8 +348,7 @@
           },
           {
             "result": {
-              "duration": 68998700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 39,
             "name": "get Email attribute value",
@@ -360,8 +359,7 @@
           },
           {
             "result": {
-              "duration": 1231561000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 40,
             "name": "click to Logout button",
@@ -372,8 +370,7 @@
           },
           {
             "result": {
-              "duration": 774535400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 41,
             "name": "click to Register header link",
@@ -401,7 +398,7 @@
         "steps": [
           {
             "result": {
-              "duration": 681615000,
+              "duration": 788003500,
               "status": "passed"
             },
             "line": 6,
@@ -414,7 +411,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-24T09:26:03.356Z",
+        "start_timestamp": "2022-03-24T10:15:24.329Z",
         "line": 57,
         "name": "Register a user with email already exists",
         "description": "",
@@ -424,7 +421,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1643992400,
+              "duration": 1330993200,
               "status": "passed"
             },
             "line": 49,
@@ -468,7 +465,7 @@
           },
           {
             "result": {
-              "duration": 701988700,
+              "duration": 130002100,
               "status": "passed"
             },
             "line": 52,
@@ -480,8 +477,9 @@
           },
           {
             "result": {
-              "duration": 69998400,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class\u003d\u0027page-body\u0027]//li[text()\u003d\u0027The specified email already exists\u0027] (tried for 30 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat commons.BasePage.waitForElementVisible(BasePage.java:458)\r\n\tat pageObject.user.UserRegisterPageObject.getEmailAlreadyExistsErrorMessage(UserRegisterPageObject.java:31)\r\n\tat stepDefinitions.user.UserRegisterPageSteps.emailAlreadyExistsErrorMessageIsDisplayed(UserRegisterPageSteps.java:117)\r\n\tat ✽.email already exists error message is displayed \"The specified email already exists\"(file:///D:/Automation%20FC/Cucumber_Nopcommerce/src/test/java/features/user/register.feature:53)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027page-body\u0027]//li[text()\u003d\u0027The specified email already exists\u0027]\"}\n  (Session info: chrome\u003d99.0.4844.74)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DN1-HOANGLH\u0027, ip: \u0027192.168.68.125\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\\Users\\HoangLH\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:11579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4c7296c464389fe70cc43b56334b6c05\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027page-body\u0027]//li[text()\u003d\u0027The specified email already exists\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat commons.BasePage.waitForElementVisible(BasePage.java:458)\r\n\tat pageObject.user.UserRegisterPageObject.getEmailAlreadyExistsErrorMessage(UserRegisterPageObject.java:31)\r\n\tat stepDefinitions.user.UserRegisterPageSteps.emailAlreadyExistsErrorMessageIsDisplayed(UserRegisterPageSteps.java:117)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)\r\n",
+              "duration": 30066175000,
+              "status": "failed"
             },
             "line": 53,
             "name": "email already exists error message is displayed \"The specified email already exists\"",
@@ -515,7 +513,7 @@
         "steps": [
           {
             "result": {
-              "duration": 688993800,
+              "duration": 886998000,
               "status": "passed"
             },
             "line": 6,
@@ -528,7 +526,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-24T09:26:06.465Z",
+        "start_timestamp": "2022-03-24T10:15:56.675Z",
         "line": 68,
         "name": "Register a user with password less than 6 character",
         "description": "",
@@ -538,7 +536,7 @@
         "steps": [
           {
             "result": {
-              "duration": 265082300,
+              "duration": 287591100,
               "status": "passed"
             },
             "line": 62,
@@ -556,7 +554,7 @@
           },
           {
             "result": {
-              "duration": 128999700,
+              "duration": 123004000,
               "status": "passed"
             },
             "line": 63,
@@ -568,7 +566,7 @@
           },
           {
             "result": {
-              "duration": 69998400,
+              "duration": 93002800,
               "status": "passed"
             },
             "line": 64,
@@ -603,7 +601,7 @@
         "steps": [
           {
             "result": {
-              "duration": 626233300,
+              "duration": 626981600,
               "status": "passed"
             },
             "line": 6,
@@ -616,7 +614,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-24T09:26:07.626Z",
+        "start_timestamp": "2022-03-24T10:15:58.084Z",
         "line": 79,
         "name": "Register a user with Password not match Confirm Password",
         "description": "",
@@ -626,7 +624,7 @@
         "steps": [
           {
             "result": {
-              "duration": 233002600,
+              "duration": 211008800,
               "status": "passed"
             },
             "line": 72,
@@ -644,7 +642,7 @@
           },
           {
             "result": {
-              "duration": 211994200,
+              "duration": 179010900,
               "status": "passed"
             },
             "line": 73,
@@ -662,7 +660,7 @@
           },
           {
             "result": {
-              "duration": 104997800,
+              "duration": 123998300,
               "status": "passed"
             },
             "line": 74,
@@ -674,7 +672,7 @@
           },
           {
             "result": {
-              "duration": 81994600,
+              "duration": 76997500,
               "status": "passed"
             },
             "line": 75,
