@@ -1,4 +1,4 @@
-@user-register
+@register
 Feature: Register a user
 
 
@@ -35,12 +35,14 @@ Feature: Register a user
       | <gender> | <firstName> | <lastName> | <dateOfBirthDay> | <dateOfBirthMonth> | <dateOfBirthYear> | <email> | <company> | <password> | <confirmPassword> |
     And click to Register button
     Then registered success message has displayed "Your registration completed"
+    When click to My account header link
+    And get Email attribute value
     When click to Logout button
     And click to Register header link
 
     Examples:
-      | gender | firstName | lastName | dateOfBirthDay | dateOfBirthMonth | dateOfBirthYear | email               | company    | password | confirmPassword |
-      | M      | Wayne     | Rooney   | 10             | March            | 1998            | test121@gmail.com | Manchester | wayne123 | wayne123        |
+      | gender | firstName | lastName | dateOfBirthDay | dateOfBirthMonth | dateOfBirthYear | email              | company    | password | confirmPassword |
+      | M      | Wayne     | Rooney   | 10             | March            | 1998            | test9851@gmail.com | Manchester | wayne123 | wayne123        |
 
   @email_already_exists
   Scenario Outline: Register a user with email already exists
@@ -51,8 +53,8 @@ Feature: Register a user
     Then email already exists error message is displayed "<error message>"
 
     Examples:
-      | gender | firstName | lastName | dateOfBirthDay | dateOfBirthMonth | dateOfBirthYear | email               | company    | password | confirmPassword | error message                                                                                      |
-      | M      | Wayne     | Rooney   | 10             | March            | 1998            | test121@gmail.com | Manchester | wayne123 | wayne123        | The specified email already exists |
+      | gender | firstName | lastName | dateOfBirthDay | dateOfBirthMonth | dateOfBirthYear | email              | company    | password | confirmPassword | error message                      |
+      | M      | Wayne     | Rooney   | 10             | March            | 1998            | test9851@gmail.com | Manchester | wayne123 | wayne123        | The specified email already exists |
 
 
   @less_than_six

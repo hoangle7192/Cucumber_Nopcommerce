@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <cucumber.version>7.2.3</cucumber.version>
+        <cucumber.version>6.10.4</cucumber.version>
         <selenium.version>3.141.59</selenium.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -115,9 +115,6 @@
                 <version>2.19.1</version>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
-                    <includes>
-                        <include>**/*/TestRunner.java</include>
-                    </includes>
                 </configuration>
             </plugin>
 

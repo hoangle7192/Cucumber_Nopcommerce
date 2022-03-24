@@ -16,4 +16,9 @@ public class UserLoginPageObject extends BasePage {
         waitForElementVisible(driver, UserLoginPageUI.EMAIL_ERROR_MESSAGE);
         return getElementText(driver, UserLoginPageUI.EMAIL_ERROR_MESSAGE);
     }
+
+    public String getCustomerInfoPageTitle() {
+        waitForElementVisible(driver, UserLoginPageUI.PAGE_TITLE);
+        return getElementText(driver, UserLoginPageUI.PAGE_TITLE);
+    }
 }

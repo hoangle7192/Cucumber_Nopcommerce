@@ -1,6 +1,7 @@
 package cucumberOptions;
 
 import java.io.File;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import commons.GlobalConstants;
@@ -120,6 +121,11 @@ public class Hooks {
         public void run() {
             close();
         }
+    }
+
+    public static int generateNumber() {
+        Random random = new Random();
+        return random.nextInt(999999);
     }
 
 }

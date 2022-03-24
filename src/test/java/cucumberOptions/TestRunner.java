@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         monochrome = true,
         plugin = {"pretty", "html:target/site/cucumber-report-default", "json:target/site/cucumber.json"},
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@login"
+        tags = "@register and @login"
 )
 
 public class TestRunner {

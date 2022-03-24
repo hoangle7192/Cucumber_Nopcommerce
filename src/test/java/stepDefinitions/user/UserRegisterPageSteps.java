@@ -7,6 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import pageObject.user.UserCustomerInfoPageObject;
 import pageObject.user.UserHomePageObject;
 import pageObject.user.UserRegisterPageObject;
 import ultil.DataHelper;
@@ -14,12 +15,17 @@ import ultil.DataHelper;
 import java.util.List;
 import java.util.Map;
 
+import static cucumberOptions.Hooks.generateNumber;
+
 public class UserRegisterPageSteps {
 
     WebDriver driver;
     DataHelper dataHelper;
     UserRegisterPageObject userRegisterPage;
     UserHomePageObject userHomePage;
+    UserCustomerInfoPageObject userCustomerInfoPage;
+
+    public static String email;
 
     public UserRegisterPageSteps() {
         this.driver = Hooks.openAndQuitBrowser();
@@ -78,7 +84,7 @@ public class UserRegisterPageSteps {
         userRegisterPage.selectDateOfBirth("DateOfBirthDay", userInfo.get(0).get("dateOfBirthDay"));
         userRegisterPage.selectDateOfBirth("DateOfBirthMonth", userInfo.get(0).get("dateOfBirthMonth"));
         userRegisterPage.selectDateOfBirth("DateOfBirthYear", userInfo.get(0).get("dateOfBirthYear"));
-        userRegisterPage.enterToTextBoxByName(driver, "Email", userInfo.get(0).get("email"));
+        userRegisterPage.enterToTextBoxByName(driver, "Email", email);
         userRegisterPage.enterToTextBoxByName(driver, "Company", userInfo.get(0).get("company"));
         userRegisterPage.enterToTextBoxByName(driver, "Password", userInfo.get(0).get("password"));
         userRegisterPage.enterToTextBoxByName(driver, "ConfirmPassword", userInfo.get(0).get("confirmPassword"));
@@ -100,12 +106,6 @@ public class UserRegisterPageSteps {
         userRegisterPage.enterToTextBoxByName(driver, "Password", enterValue);
     }
 
-    @When("click to Logout button")
-    public void clickToLogoutButton() {
-        userRegisterPage.clickToHeaderMenuLinkByText(driver, "Log out");
-        userHomePage = PageGeneratorManager.getUserHomePage(driver);
-    }
-
     @When("enter {string} to Confirm Password text box")
     public void enterToConfirmPasswordTextBox(String enterValue) {
         userRegisterPage.enterToTextBoxByName(driver, "ConfirmPassword", enterValue);
@@ -114,5 +114,11 @@ public class UserRegisterPageSteps {
     @Then("email already exists error message is displayed {string}")
     public void emailAlreadyExistsErrorMessageIsDisplayed(String errorMessage) {
         userRegisterPage.getEmailAlreadyExistsErrorMessage();
+    }
+
+    @When("click to My account header link")
+    public void clickToMyAccountHeaderLink() {
+        userRegisterPage.clickToHeaderMenuLinkByText(driver, "My account");
+        userCustomerInfoPage = PageGeneratorManager.getUserCustomerInfoPage(driver);
     }
 }

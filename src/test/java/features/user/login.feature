@@ -17,6 +17,14 @@ Feature: Login with user account
     Then email error message is displayed
       | Wrong email |
 
+    Scenario: Login with registered email and valid password
+      When enter registered email to Email text box
+      And enter valid password to Password text box
+        | wayne123 |
+      And click Login button
+      Then a web browser is on the Customer Info Page
+        | My account - Customer info |
+
 
 
 
