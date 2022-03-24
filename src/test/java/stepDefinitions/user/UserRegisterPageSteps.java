@@ -5,6 +5,7 @@ import cucumberOptions.Hooks;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import pageObject.user.UserCustomerInfoPageObject;
 import pageObject.user.UserRegisterPageObject;
@@ -13,16 +14,12 @@ import ultil.DataHelper;
 import java.util.List;
 import java.util.Map;
 
-import static cucumberOptions.Hooks.generateNumber;
-
 public class UserRegisterPageSteps {
 
     WebDriver driver;
     DataHelper dataHelper;
     UserRegisterPageObject userRegisterPage;
     UserCustomerInfoPageObject userCustomerInfoPage;
-
-    public static String email;
 
     public UserRegisterPageSteps() {
         this.driver = Hooks.openAndQuitBrowser();
@@ -81,7 +78,7 @@ public class UserRegisterPageSteps {
         userRegisterPage.selectDateOfBirth("DateOfBirthDay", userInfo.get(0).get("dateOfBirthDay"));
         userRegisterPage.selectDateOfBirth("DateOfBirthMonth", userInfo.get(0).get("dateOfBirthMonth"));
         userRegisterPage.selectDateOfBirth("DateOfBirthYear", userInfo.get(0).get("dateOfBirthYear"));
-        userRegisterPage.enterToTextBoxByName(driver, "Email",userInfo.get(0).get("email") );
+        userRegisterPage.enterToTextBoxByName(driver, "Email", userInfo.get(0).get("mail"));
         userRegisterPage.enterToTextBoxByName(driver, "Company", userInfo.get(0).get("company"));
         userRegisterPage.enterToTextBoxByName(driver, "Password", userInfo.get(0).get("password"));
         userRegisterPage.enterToTextBoxByName(driver, "ConfirmPassword", userInfo.get(0).get("confirmPassword"));
